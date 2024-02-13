@@ -1,3 +1,4 @@
+// triangle 
 /*
 objective:get base, height of a triangle.calculate the area by using the provide formula.and then
 display the area.
@@ -19,4 +20,12 @@ function calculateTriangele(){
    const triangleHeightText=triangleHeightInput.value;
    const height=parseFloat(triangleHeightText)
     console.log(height);
+
+    //calculate triangle area
+    const area = 0.5 * base *height;
+    console.log("area of the triangle is:",area);
+    //display triangle area
+    const triangleAreaSpan = document.getElementById('triangle-area');
+    triangleAreaSpan.innerText=area;
 };
+
